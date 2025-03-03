@@ -1,0 +1,14 @@
+$tb-break-point: 1024px;
+$md-break-point: 768px;
+
+@mixin tb {
+  @media screen and (max-width: ($tb-break-point)) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: ($md-break-point)) {
+    @content;
+  }
+}
